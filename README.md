@@ -1,4 +1,4 @@
-# Projeto de Modelagem de Dados - Biblioteca da Escola Nova
+# Projeto de Modelagem de Dados - Biblioteca do Colégio Sol Nascente
 
 Este projeto é dedicado à modelagem de dados da biblioteca do **Colégio Sol Nascente**. O objetivo é criar uma estrutura de banco de dados que possa gerenciar eficientemente as operações da biblioteca, incluindo o registro de livros, empréstimos, devoluções e a gestão de usuários (alunos e professores).
 
