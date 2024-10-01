@@ -1,0 +1,165 @@
+header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #001f3f;
+  padding: 10px 20px;
+}
+
+header .logo img {
+  height: 50px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+nav ul li {
+  margin-left: 20px;
+}
+
+nav ul li a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.banner {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ff851b;
+  padding: 40px 20px;
+}
+
+.banner-text {
+  flex: 1 1 50%;
+}
+
+.banner-image {
+  flex: 1 1 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner-image img {
+  max-width: 70%;
+  height: auto;
+}
+
+.buttons {
+  margin-top: 20px;
+}
+
+.btn {
+  background-color: #ffdc00;
+  color: #001f3f;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+h2 {
+  margin: 20px 0;
+  color: #001f3f;
+}
+
+.content {
+  background: #ffffff;
+  padding: 5vh 2vw;
+}
+
+.section-gray {
+  background-color: #f0f0f0;
+  padding: 20px;
+}
+
+.section-lightgray {
+  background-color: #e0e0e0;
+  padding: 20px;
+}
+
+.content-section {
+  margin-bottom: 20px;
+}
+
+footer {
+  text-align: center;
+  background-color: #001f3f;
+  color: #ffffff;
+  padding: 20px 0;
+}
+
+.link-footer {
+  color: #ffdc00;
+  text-decoration: none;
+}
+
+.link-footer:hover {
+  color: #ff851b;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.model-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+}
+
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  nav ul {
+    flex-direction: column;
+    width: 100%;
+    padding: 10px 0;
+  }
+
+  nav ul li {
+    margin-left: 0;
+    margin-bottom: 10px;
+  }
+
+  .banner {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .banner-text,
+  .banner-image {
+    flex: 1 1 100%;
+    text-align: center;
+  }
+
+  .banner-image {
+    margin-top: 20px;
+  }
+
+  .banner-image img {
+    max-width: 80%;
+  }
+
+  .btn {
+    margin: 5px 0;
+  }
+}
+
+@media (max-width: 1024px) {
+  img {
+    max-width: 90vw;
+    height: auto;
+  }
+}

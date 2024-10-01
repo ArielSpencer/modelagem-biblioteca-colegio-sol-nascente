@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Biblioteca do Colégio Sol Nascente</title>
+  <link rel="stylesheet" href="./styles/reset.css">
+  <link rel="stylesheet" href="./styles/style.css">
+</head>
+
+<body>
+  <header>
+    <div class="logo">
+      <img src="./assets/images/logo.png" alt="Logo do Colégio Sol Nascente">
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#escopo">Escopo</a></li>
+        <li><a href="#modelo-conceitual">Modelo Conceitual</a></li>
+        <li><a href="#modelo-logico">Modelo Lógico</a></li>
+        <li><a href="https://github.com/ArielSpencer/modelagem-biblioteca-colegio-sol-nascente"
+            target="_blank">Repositório</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="banner">
+    <div class="banner-text">
+      <h1>Biblioteca do Colégio Sol Nascente</h1>
+      <p>Esta é a modelagem de dados da biblioteca do Colégio Sol Nascente, visando otimizar a gestão de empréstimos e
+        reservas de livros.</p>
+      <div class="buttons">
+        <a href="./assets/images/modelo_conceitual.png" download class="btn">Baixar Modelo Conceitual</a>
+        <a href="./assets/images/modelo_logico.png" download class="btn">Baixar Modelo Lógico</a>
+      </div>
+    </div>
+    <div class="banner-image">
+      <img src="./assets/images/aluno_sol_nascente.png" alt="Aluno Lendo">
+    </div>
+  </section>
+
+  <div class="content">
+    <h2 id="escopo">Escopo do projeto</h2>
+    <p>O projeto visa desenvolver um sistema para a biblioteca do Colégio Sol Nascente, permitindo a gestão eficiente de
+      empréstimos e reservas de livros por alunos. O sistema contempla o cadastro de alunos, livros, editoras, autores e
+      gêneros, além de permitir o controle de multas por atraso e reservas de livros.</p>
+
+    <h2 id="modelo-conceitual">Modelo Conceitual</h2>
+    <div class="model-section">
+      <img src="./assets/images/modelo_conceitual.svg" alt="Modelo Conceitual">
+    </div>
+
+    <div class="content-section">
+      <div class="section-gray">
+        <h3 id="modelo-conceitual">Entidades</h3>
+        <p>As entidades do modelo conceitual incluem: Alunos, Livros, Editoras, Autores, Gêneros, Endereco_Cliente e
+          Endereco_Editora. As entidades fortes são Alunos, Livros, Editoras, Autores e Gêneros, enquanto as entidades
+          fracas são Livros_Autor, Cliente_Livros e Reservas.</p>
+      </div>
+      <div class="section-lightgray">
+        <h3 id="modelo-conceitual">Relacionamentos</h3>
+        <p>Os relacionamentos entre as entidades são os seguintes: Alunos possuem Endereco_Cliente; Editoras
+          localizam-se em Endereco_Editora; Livros são publicados por Editoras; Livros têm um ou mais Autores; Alunos
+          realizam empréstimos de Livros; Alunos fazem Reservas; e Livros pertencem a um Gênero.</p>
+      </div>
+      <div class="section-gray">
+        <h3 id="modelo-conceitual">Cardinalidades</h3>
+        <p>As cardinalidades são definidas como: Alunos (1,N) ↔ (1,1) Endereco_Cliente; Editoras (1,N) ↔ (1,1)
+          Endereco_Editora; Livros (1,N) ↔ (1,1) Editoras; Livros (1,N) ↔ (1,N) Livros_Autor; Autores (1,N) ↔ (1,N)
+          Livros_Autor; Alunos (1,N) ↔ (1,N) Cliente_Livros; Livros (1,N) ↔ (1,N) Cliente_Livros; Alunos (1,N) ↔ (1,N)
+          Reservas; Livros (1,N) ↔ (1,N) Reservas; Livros (N,1) ↔ (1,N) Gêneros.</p>
+      </div>
+    </div>
+
+    <h2 id="modelo-logico">Modelo Lógico</h2>
+    <div class="model-section">
+      <img src="./assets/images/modelo_logico.png" alt="Modelo Lógico">
+    </div>
+    <p>O modelo lógico é uma representação mais detalhada das entidades e relacionamentos, incluindo os atributos de
+      cada
+      entidade e as chaves primárias e estrangeiras que definem as interações entre elas.</p>
+  </div>
+
+  <footer>
+    <p>Desenvolvido por <a href="https://arielspencer.com.br" target="_blank" class="link-footer">Ariel Spencer</a> ©
+      2024 Todos os direitos
+      reservados.</p>
+  </footer>
+
+  <script src="./js/scripts.js"></script>
+</body>
+
+</html>
