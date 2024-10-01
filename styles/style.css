@@ -7,6 +7,12 @@ header {
   padding: 10px 20px;
 }
 
+.logo-section {
+  color: #ffffff;
+  display: flex;
+  gap: 16px;
+}
+
 header .logo img {
   height: 50px;
 }
@@ -77,11 +83,16 @@ h2 {
 .section-gray {
   background-color: #f0f0f0;
   padding: 20px;
+  padding: 5vh 2vw;
+  border-radius: 26px;
+  margin: 5vh 0;
 }
 
 .section-lightgray {
   background-color: #e0e0e0;
-  padding: 20px;
+  padding: 5vh 2vw;
+
+  border-radius: 26px;
 }
 
 .content-section {
@@ -155,11 +166,19 @@ img {
   .btn {
     margin: 5px 0;
   }
+
 }
 
 @media (max-width: 1024px) {
   img {
     max-width: 90vw;
     height: auto;
+  }
+
+  .buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
   }
 }
